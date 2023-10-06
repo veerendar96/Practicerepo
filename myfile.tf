@@ -1,10 +1,8 @@
 provider "aws" {
-region = ""
+region = "ap-south-1"
 access_key = ""
 secret_key = ""
-}
-new provider "aws" {
-new region = ""
-new access_key = ""
-new secret_key = ""
+resource "aws_s3_bucket" "abc" {
+bucket = "flipkart983712fli"
+acl = "private"
 }
